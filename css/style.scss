@@ -1,0 +1,193 @@
+@use 'variables';
+@use "button";
+@use "ul-li";
+@use "scss-desktoppx/header-1600";
+@use "scss-desktoppx/menu-1600";
+@use "scss-desktoppx/info-container-1600";
+@use "scss-desktoppx/stocks-container-1600";
+@use "scss-desktoppx/partners-container-1600";
+@use "scss-desktoppx/footer-1600";
+
+@media (max-width: 1300px) {
+    .header {
+        &__inner {
+            display: none;
+        }
+
+        &__banner-info {
+            margin-top: 191px;
+            margin-bottom: 204px;
+        }
+
+        &__text {
+            margin-left: 150px;
+            font-weight: 400;
+        }
+
+        &__triangle {
+            margin-left: 150px;
+        }
+
+        &__label {
+            font-size: 55px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        &__shops {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        &__phone {
+            display: none;
+        }
+    }
+
+    .info-container {
+        display: none;
+    }
+
+    .stocks-container {
+        margin-top: 80px;
+
+        &__stocks-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        &__background-box {
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 0 22px;
+        }
+
+        &__info-stocks {
+            text-align: center;
+        }
+
+        &__phone-left,
+        &__phone-right {
+            display: none;
+        }
+    }
+
+    .partners-container {
+        &__label-partners {
+            margin-top: 80px;
+        }
+
+        &__background-box {
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 48px 0;
+        }
+
+        &__icon-partners-right-left {
+            align-items: center;
+            overflow: hidden;
+        }
+
+        &__info-partners {
+            text-align: center;
+            gap: 10px;
+        }
+
+        &__partner-item {
+            flex: 0 0 auto;
+            padding: 0 10px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+    }
+
+    .right {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 75px;
+    }
+
+    .left {
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 75px;
+    }
+
+    .footer {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: underline;
+        position: relative;
+        padding: 40px 20px;
+
+        &__info-footer {
+            margin-top: 120px;
+            margin-bottom: 40px;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+        }
+
+        &__gap-40 {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__contact-us {
+            position: absolute;
+            top: 40px;
+        }
+    }
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(248, 22, 180);
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+}
+
+.container {
+    max-width: 1435px;
+    width: 100%;
+    padding-inline: 75px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('./fons/futurabookc-webfont.svg') format('svg');
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('./fons/futurademic-webfont.svg') format('svg');
+}

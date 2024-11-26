@@ -1,0 +1,51 @@
+.button-contact-us {
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.button-contact-us:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.down {
+  background-color: #29D3D1;
+  padding: 17px 60px;
+  color: #FFFFFF;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  border: none;
+  -webkit-box-shadow: 1px 4px 24px 0px rgba(0, 0, 0, 0.3490196078);
+          box-shadow: 1px 4px 24px 0px rgba(0, 0, 0, 0.3490196078);
+  margin-bottom: -25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.down:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}

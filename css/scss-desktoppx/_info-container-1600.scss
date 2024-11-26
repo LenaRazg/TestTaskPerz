@@ -1,0 +1,84 @@
+.info-container {
+    margin-top: 183px;
+
+    &__background-box {
+        display: flex;
+        justify-content: space-between;
+        background: #29D3D1;
+        padding: 60px 10px 152px;
+        color: #FFFFFF;
+        position: relative;
+    }
+
+    &__info-list-left {
+        max-width: 219px;
+        width: 100%;
+        left: 0;
+    }
+
+    &__info-list-right {
+        max-width: 996px;
+        width: 100%;
+    }
+
+    &__list-name-ul {
+        display: flex;
+        gap: 50px;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-transform: uppercase;  
+    }
+
+    &__list-name-li {
+        opacity: 40%;
+        cursor: pointer;
+        transition: transform 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &.active {
+            opacity: 100%;
+            text-decoration: underline;
+        }
+    }
+
+    &__info-box {
+        font-family: 'FuturaDemiC', sans-serif;
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    &__position-phone {
+        position: absolute;
+        left: 271px;
+        top: -75px;
+    }
+
+    &__back-phone {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__action-iphone {
+        position: absolute;
+        top: 55px;
+        left: 17px;
+        z-index: 1;
+    }
+}
+
+samp {
+    transition: opacity 0.3s ease;
+
+    &.hidden {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,36 @@
+@use "../variables" as var;
+
+.footer {
+    background-image: url(#{var.$footer-image});
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 43px 155px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+    &__info-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 11px;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    &__left-text {
+        margin-left: 0;
+    }
+
+    &__gap-40 {
+        display: flex;
+        gap: 40px;
+        color: #B5B5B5;
+    }
+}
